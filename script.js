@@ -1,6 +1,6 @@
 "use strict";
 
-class Person {
+class Employee  {
     static numberVacationDays = 18;
 
     constructor (firstName, lastName, age, jobPosition, salary) { 
@@ -21,12 +21,12 @@ class Person {
     }
 }
 
-const person1 = new Person("Ivan", "Ivanov", 30, "welder", 1000);
-const person2 = new Person("Kolya", "Petrov", 35, "turner", 800);
-person1.fullName;
-person2.fullName;
-person1.calcYearSalary();
-person2.calcYearSalary();
+const employee1 = new Employee ("Ivan", "Ivanov", 30, "welder", 1000);
+const employee2 = new Employee ("Kolya", "Petrov", 35, "turner", 800);
+employee1.fullName;
+employee2.fullName;
+employee1.calcYearSalary();
+employee2.calcYearSalary();
 
-console.log(person1);
-console.log(person2);
+console.log(employee1);
+console.log(employee2);
