@@ -1,7 +1,7 @@
 "use strict";
 
 class Person {
-    numberVacationDays = 18;
+    static numberVacationDays = 18;
 
     constructor (firstName, lastName, age, jobPosition, salary) { 
     this.firstName = firstName;
