@@ -12,12 +12,11 @@ class Employee  {
     }
 
     get fullName() {
-        console.log(this.firstName, this.lastName);
+        return `${this.firstName} ${this.lastName}`;
     }
 
     calcYearSalary() {
-        let yearSalary = this.salary * 12;
-        console.log(yearSalary); 
+        return this.salary * 12;
     }
 }
 
@@ -25,8 +24,8 @@ const employee1 = new Employee ("Ivan", "Ivanov", 30, "welder", 1000);
 const employee2 = new Employee ("Kolya", "Petrov", 35, "turner", 800);
 employee1.fullName;
 employee2.fullName;
-employee1.calcYearSalary();
-employee2.calcYearSalary();
+console.log(employee1.calcYearSalary());
+console.log(employee2.calcYearSalary());
 
 console.log(employee1);
 console.log(employee2);
